@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --primary-color:#ffffff;
+    --secondary-color:#212121;
+}
+.dark-mode{
+    --primary-color:#28304d;
+    --secondary-color:#ffffff;
+}
 header{
     background-color: #2874f0;
     display: flex;
@@ -43,7 +51,8 @@ header{
     border: none;
     outline: none;
     font-size: 14px;
-    color: #000;
+    color: black;
+    background-color: white;
 }
 .loginbtn{
     padding: 7px 40px;
@@ -67,7 +76,7 @@ header{
     display: none;
     position: absolute;
     top:46px;
-    background-color:white;
+    background-color:var(--primary-color);
     width: 420px;
     padding:8px 10px;
     margin-left: -10px;
@@ -85,7 +94,7 @@ header{
 .RecentSearch_List_Discover p
 {
     padding-left: 15px;
-    color: #000;
+    color: var(--secondary-color);
 }
 .discovermore{
     margin: 15px 0px;
@@ -109,14 +118,14 @@ header{
     height: 350px;
     width: 200px;
     margin-left: -97px;
-    background-color:white;
+    background-color:var(--primary-color);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2),
     5px -5px 10px rgba(0,0,0,0.2);
     align-items:center ;
     flex-direction:column ;
     padding: 0px 20px;
     font-weight: 500;
-    color: #000;
+    color: var(--secondary-color);
     display: none;
     font-size: 14;
     font-family: Arial, Helvetica, sans-serif;
@@ -130,7 +139,7 @@ background-color: white;
     width: 0;
     border-left:10px solid transparent ;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid white;
+    border-bottom: 15px solid var(--primary-color);
     top: -11px;
 }
 .Newuser{
@@ -164,6 +173,9 @@ background-color: white;
     display: flex;
     cursor: pointer;
 }
+.headerlink{
+    color: var(--primary-color);
+}
 .angledownicon:hover .moreicon{
     transition: 0.25s;
     transform: rotate(-180deg);
@@ -179,7 +191,7 @@ background-color: white;
     width: 0;
     border-left:10px solid transparent ;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid white;
+    border-bottom: 15px solid var(--primary-color);
     top: 5px;
     margin-left: 11px;
 
@@ -190,8 +202,8 @@ background-color: white;
     width: 250px;
     margin-left: -100px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    background-color:white;
-    color: #000;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 3px;
 
 }
@@ -223,6 +235,7 @@ background-color: white;
     border-bottom: 1px solid #ccc;
     font-family: sans-serif;
     font-size: 14;
+    background-color: var(--primary-color);
 }
 .topProductNavbar_Nav{
     /* height: 80p; */
@@ -238,12 +251,14 @@ background-color: white;
 .topProductNavbar_Nav p{
     font-weight: 510;
     padding-top: 7px;
+    color: var(--secondary-color);
 }
 .topProductNavbar_Nav_b{
     width: 80px;
     cursor: pointer;
     flex: 1;
     padding-right: 40px;
+    color: var(--secondary-color);
 }
 .topProductNavbar_Nav_b img{
     width: 64;
@@ -260,6 +275,10 @@ background-color: white;
 }
 .topProductNavbar_Nav_b:hover p{
     color:#2874f0
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
 }
 .section-2-container{
     
@@ -284,6 +303,7 @@ background-color: white;
     padding:10px 0px ;
     overflow: hidden;
     padding-left: 0px;
+    background-color: var(--primary-color);
 }
 .btn-container{
     margin: auto;
@@ -313,7 +333,7 @@ background-color: white;
     height: 100%;
     margin-top: 8px;
     height: 362px;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -337,6 +357,7 @@ background-color: white;
 .section-4-offers-viewall p{
     text-align: center;
     padding: 10px;
+    color: var(--secondary-color);
 }
 .section-4-offers-viewall button {
     margin-top: 24px;
@@ -371,6 +392,7 @@ background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--secondary-color);
 }
 .section-4-item img {
     max-width: 200px;
@@ -401,7 +423,7 @@ background-color: white;
     height: 100%;
     margin-top: 8px;
     height: 362px;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -425,6 +447,7 @@ background-color: white;
 .section-5-offers-viewall p{
     text-align: center;
     padding: 10px;
+    color: var(--secondary-color);
 }
 .section-5-offers-viewall button {
     margin-top: 24px;
@@ -457,6 +480,7 @@ background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--secondary-color);
 }
 .section-5-item img {
     max-width: 200px;
@@ -487,7 +511,7 @@ background-color: white;
     height: 100%;
     margin-top: 8px;
     height: 362px;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -511,6 +535,7 @@ background-color: white;
 .section-6-offers-viewall p{
     text-align: center;
     padding: 10px;
+    color: var(--secondary-color);
 }
 .section-6-offers-viewall button {
     margin-top: 24px;
@@ -543,6 +568,7 @@ background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--secondary-color);
 }
 .section-6-item img {
     max-width: 200px;
@@ -573,7 +599,7 @@ background-color: white;
     height: 100%;
     margin-top: 8px;
     height: 362px;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -597,6 +623,7 @@ background-color: white;
 .section-7-offers-viewall p{
     text-align: center;
     padding: 10px;
+    color: var(--secondary-color);
 }
 .section-7-offers-viewall button {
     margin-top: 24px;
@@ -629,6 +656,7 @@ background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--secondary-color);
 }
 .section-7-item img {
     max-width: 200px;
