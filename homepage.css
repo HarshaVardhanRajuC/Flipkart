@@ -45,6 +45,31 @@ header{
     align-items: center;
     padding:10px 0px;
 }
+.location{
+    margin-right: 30px;
+}
+.location button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: yellow;
+    font-size: 15;
+   
+}
+.location button:hover{
+    /* text-decoration: underline; */
+    transform: scale(1.01);
+}
+#weather{
+    color: rgb(226, 238, 116);
+    margin-left: 10px;
+    /* padding-top: 5px; */
+}
+.weathericon img{
+    height: 35px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
 .plus-color{
     color: #ffe500;
     font-weight: 900;
